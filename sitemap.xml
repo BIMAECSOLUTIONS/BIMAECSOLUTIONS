@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bimaecsolutions.com/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/about/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/services/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/projects/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/our-licenses/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/rd/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://bimaecsolutions.com/contact/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://bimaecsolutions.com/</loc></url>
+  <url><loc>https://bimaecsolutions.com/about/</loc></url>
+  <url><loc>https://bimaecsolutions.com/services/</loc></url>
+  <url><loc>https://bimaecsolutions.com/our-licenses/</loc></url>
+  <url><loc>https://bimaecsolutions.com/projects/</loc></url>
+  <url><loc>https://bimaecsolutions.com/rd/</loc></url>
+  <url><loc>https://bimaecsolutions.com/contact/</loc></url>
 </urlset>
