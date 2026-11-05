@@ -975,5 +975,27 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
             var trafficScript = document.createElement('script'); trafficScript.src = 'https://img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'; window.document.head.appendChild(trafficScript);</script>
 		<script>window.addEventListener('click', function (elem) { var _elem$target, _elem$target$dataset, _window, _window$_trfq; return (elem === null || elem === void 0 ? void 0 : (_elem$target = elem.target) === null || _elem$target === void 0 ? void 0 : (_elem$target$dataset = _elem$target.dataset) === null || _elem$target$dataset === void 0 ? void 0 : _elem$target$dataset.eid) && ((_window = window) === null || _window === void 0 ? void 0 : (_window$_trfq = _window._trfq) === null || _window$_trfq === void 0 ? void 0 : _window$_trfq.push(["cmdLogEvent", "click", elem.target.dataset.eid]));});</script>
 		<script src='https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js' onload="window.tti.calculateTTI()"></script>
-			</body>
+			<script id="project-text-align">
+/* Line each project's text up with the left edge of its own picture (layout only, no content changed) */
+(function(){
+  function align(){
+    var texts = document.querySelectorAll('.elementor-2970 .e-con > .elementor-widget-text-editor');
+    for (var i = 0; i < texts.length; i++) {
+      var w = texts[i];
+      var img = w.parentElement.querySelector('.elementor-widget-image img');
+      var box = w.querySelector('.elementor-widget-container');
+      if (!img || !box) continue;
+      box.style.paddingLeft = '0px';
+      var d = img.getBoundingClientRect().left - box.getBoundingClientRect().left;
+      box.style.paddingLeft = (d > 0 ? Math.round(d) : 0) + 'px';
+    }
+  }
+  var t;
+  function later(){ clearTimeout(t); t = setTimeout(align, 100); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', align); else align();
+  window.addEventListener('load', function(){ align(); later(); });
+  window.addEventListener('resize', later);
+})();
+</script>
+</body>
 </html>
