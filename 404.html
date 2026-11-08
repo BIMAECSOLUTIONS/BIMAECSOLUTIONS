@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Not Found – BIM AEC SOLUTIONS</title>
+    <meta http-equiv="refresh" content="3; url=/">
+    <script>
+        var path = window.location.pathname.toLowerCase();
+        if (path.indexOf('/activities') !== -1) {
+            window.location.replace('/Activities/');
+        } else if (path.indexOf('/rd') !== -1) {
+            window.location.replace('/rd/');
+        } else if (path.indexOf('/about') !== -1) {
+            window.location.replace('/about/');
+        } else if (path.indexOf('/services') !== -1) {
+            window.location.replace('/services/');
+        } else if (path.indexOf('/projects') !== -1) {
+            window.location.replace('/projects/');
+        } else if (path.indexOf('/our-licenses') !== -1) {
+            window.location.replace('/our-licenses/');
+        } else if (path.indexOf('/contact') !== -1) {
+            window.location.replace('/contact/');
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; text-align: center; padding: 100px 20px; color: #1e293b; background: #f8fafc; }
+        h1 { font-size: 36px; color: #4d61d6; }
+        p { font-size: 18px; color: #64748b; }
+        a { color: #4d61d6; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <p>The page you are looking for does not exist or has been moved.</p>
+    <p><a href="/">Return to Home Page</a></p>
+</body>
+</html>
