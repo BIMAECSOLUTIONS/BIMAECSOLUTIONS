@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -2975,7 +2975,8 @@
 	<link rel="stylesheet" id="base-desktop-css" href="../../shared/base-desktop.css?ver=6ae8749ecfa0a" media="all">
 	<link rel="stylesheet" id="base-mobile-css" href="../../shared/base-mobile.css?ver=6ae8749ecfa0a"
 		media="(max-width:767px)">
-	<link rel="stylesheet" id="hfe-elementor-icons-css" href="../../shared/elementor-icons.min.css?ver=5.34.0" media="all">
+	<link rel="stylesheet" id="hfe-elementor-icons-css" href="../../shared/elementor-icons.min.css?ver=5.34.0"
+		media="all">
 	<link rel="stylesheet" id="hfe-icons-list-css" href="../../shared/widget-icon-list.min.css?ver=3.24.3" media="all">
 	<link rel="stylesheet" id="hfe-social-icons-css" href="../../shared/widget-social-icons.min.css?ver=3.24.0"
 		media="all">
@@ -3589,7 +3590,8 @@
 				box-sizing: border-box;
 			}
 		}
-			/* Navigation Submenu Styling for Activities -> Visit CABR */
+
+		/* Navigation Submenu Styling for Activities -> Visit CABR */
 		.main-header-menu .menu-item-has-children {
 			position: relative;
 		}
@@ -3638,8 +3640,8 @@
 			display: none !important;
 		}
 
-		.main-header-menu .menu-item-has-children:hover > .sub-menu,
-		.main-header-menu .menu-item-has-children:focus-within > .sub-menu {
+		.main-header-menu .menu-item-has-children:hover>.sub-menu,
+		.main-header-menu .menu-item-has-children:focus-within>.sub-menu {
 			opacity: 1;
 			visibility: visible;
 			transform: translateX(-50%) translateY(0);
@@ -3653,7 +3655,7 @@
 			padding: 0;
 		}
 
-		.main-header-menu .sub-menu .menu-item > .menu-link {
+		.main-header-menu .sub-menu .menu-item>.menu-link {
 			display: block;
 			padding: 8px 14px !important;
 			color: #ffffff !important;
@@ -3668,8 +3670,8 @@
 			background: transparent !important;
 		}
 
-		.main-header-menu .sub-menu .menu-item > .menu-link:hover,
-		.main-header-menu .sub-menu .menu-item.current-menu-item > .menu-link {
+		.main-header-menu .sub-menu .menu-item>.menu-link:hover,
+		.main-header-menu .sub-menu .menu-item.current-menu-item>.menu-link {
 			background-color: var(--ast-global-color-0, #6878d6) !important;
 			color: #ffffff !important;
 		}
@@ -3690,14 +3692,32 @@
 				backdrop-filter: none !important;
 				-webkit-backdrop-filter: none !important;
 			}
+
 			.main-header-menu .menu-item-has-children .sub-menu::before {
 				display: none !important;
 			}
-			.main-header-menu .sub-menu .menu-item > .menu-link {
+
+			.main-header-menu .sub-menu .menu-item>.menu-link {
 				padding: 8px 12px !important;
 				font-size: 14px !important;
 				background: transparent !important;
 			}
+		}
+
+		/* Masthead Transparent Overlay Alignment - Follow Home Style */
+		.ast-theme-transparent-header #masthead {
+			position: absolute !important;
+			left: 0 !important;
+			right: 0 !important;
+			top: 0 !important;
+			width: 100% !important;
+			z-index: 99 !important;
+		}
+
+		.ast-theme-transparent-header .main-header-bar,
+		.ast-theme-transparent-header.ast-header-break-point .main-header-bar {
+			background: none !important;
+			background-color: transparent !important;
 		}
 	</style>
 </head>
@@ -3729,8 +3749,8 @@
 										data-section="title_tagline">
 										<div class="site-branding ast-site-identity"
 											itemtype="https://schema.org/Organization" itemscope="itemscope">
-											<span class="site-logo-img"><a href="../../index.html" class="custom-logo-link"
-													rel="home"><img width="180" height="90"
+											<span class="site-logo-img"><a href="../../index.html"
+													class="custom-logo-link" rel="home"><img width="180" height="90"
 														src="../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-180x90.png"
 														class="custom-logo" alt="BIM AEC SOLUTIONS" decoding="async"
 														srcset="../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-180x90.png 180w, ../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-300x150.png 300w, ../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-1024x512.png 1024w, ../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-768x384.png 768w, ../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-1536x768.png 1536w, ../../shared/cropped-LOGO-Revise-V3b-4a-1-scaled-1-2048x1024.png 2048w"
@@ -3779,17 +3799,34 @@
 															</li>
 															<li id="menu-item-3355"
 																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3355">
-																<a href="../../rd/index.html" class="menu-link">R&amp;D</a>
+																<a href="../../rd/index.html"
+																	class="menu-link">R&amp;D</a>
 															</li>
 															<li id="menu-item-activities"
 																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-ancestor menu-item-activities">
-																<a href="../index.html" class="menu-link">Activities<span role="application" class="dropdown-menu-toggle" tabindex="0"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="10px" height="6px" viewBox="0 0 255 153"><path d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z"></path></svg></span></span></a>
+																<a href="../index.html"
+																	class="menu-link">Activities<span role="application"
+																		class="dropdown-menu-toggle" tabindex="0"><span
+																			class="ast-icon icon-arrow"><svg
+																				class="ast-arrow-svg"
+																				xmlns="http://www.w3.org/2000/svg"
+																				width="10px" height="6px"
+																				viewBox="0 0 255 153">
+																				<path
+																					d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z">
+																				</path>
+																			</svg></span></span></a>
 																<ul class="sub-menu">
 																	<li id="menu-item-visit-cabr"
 																		class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-visit-cabr">
-																		<a href="./index.html" aria-current="page" class="menu-link">Visit CABR</a>
+																		<a href="./index.html" aria-current="page"
+																			class="menu-link">Visit CABR</a>
 																	</li>
-	<li id="menu-item-ecadi" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi"><a href="../ECADI/index.html" class="menu-link">ECADI</a></li>
+																	<li id="menu-item-ecadi"
+																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi">
+																		<a href="../ECADI/index.html"
+																			class="menu-link">ECADI</a>
+																	</li>
 																</ul>
 															</li>
 															<li id="menu-item-724"
@@ -3806,11 +3843,16 @@
 									<div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-button-1"
 										data-section="section-hb-button-1">
 										<div class="ast-builder-button-wrap ast-builder-button-size-"><a
-												class="ast-custom-button-link" href="../../contact/index.html"
-												target="_blank" role="button" aria-label="Request a proposal ">
-												<div class="ast-custom-button">Request a proposal </div>
-											</a><a class="menu-link" href="../../contact/index.html"
-												target="_blank">Request a proposal </a></div>
+												class="ast-custom-button-link"
+												href="../../Profiles/SINGAPORE-CAMBODIA%20INTEGRATION.pdf"
+												target="_blank" rel="noopener noreferrer" role="button"
+												aria-label="International Integration"
+												title="View &amp; Download Singapore-Cambodia Integration Profile">
+												<div class="ast-custom-button">INTERNATIONAL INTEGRATION</div>
+											</a><a class="menu-link"
+												href="../../Profiles/SINGAPORE-CAMBODIA%20INTEGRATION.pdf"
+												target="_blank" rel="noopener noreferrer">INTERNATIONAL INTEGRATION</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -3909,12 +3951,25 @@
 											</li>
 											<li
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-ancestor menu-item-activities">
-												<a href="../index.html" class="menu-link">Activities<span role="application" class="dropdown-menu-toggle" tabindex="0"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="10px" height="6px" viewBox="0 0 255 153"><path d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z"></path></svg></span></span></a>
+												<a href="../index.html" class="menu-link">Activities<span
+														role="application" class="dropdown-menu-toggle"
+														tabindex="0"><span class="ast-icon icon-arrow"><svg
+																class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+																width="10px" height="6px" viewBox="0 0 255 153">
+																<path
+																	d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z">
+																</path>
+															</svg></span></span></a>
 												<ul class="sub-menu">
-													<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-visit-cabr">
-														<a href="./index.html" aria-current="page" class="menu-link">Visit CABR</a>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-visit-cabr">
+														<a href="./index.html" aria-current="page"
+															class="menu-link">Visit CABR</a>
 													</li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi"><a href="../ECADI/index.html" class="menu-link">ECADI</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi">
+														<a href="../ECADI/index.html" class="menu-link">ECADI</a>
+													</li>
 												</ul>
 											</li>
 											<li
@@ -3940,7 +3995,8 @@
 					<span style="color: #ffffff; font-weight: 600;">Visit CABR</span>
 				</div>
 				<h1 class="activities-hero-title">Visit CABR</h1>
-				<p class="activities-hero-subtitle">Strengthening International Cooperation in Advanced Engineering Testing &amp; Research</p>
+				<p class="activities-hero-subtitle">Strengthening International Cooperation in Advanced Engineering
+					Testing &amp; Research</p>
 			</div>
 		</section>
 
@@ -3959,7 +4015,7 @@
 						Testing and Research</h4>
 
 					<div class="activity-prose">
-						<p>In March 2026, BIM AEC Solutions was invited to visit the China Academy of Building Research
+						<p>In March 2026, We were invited to visit the China Academy of Building Research
 							(CABR) in Beijing, China, one of the country's leading institutions in building science,
 							engineering research, and technical innovation.</p>
 
@@ -3979,7 +4035,7 @@
 								alt="BIM AEC Solutions leadership visiting the China Academy of Building Research (CABR) Testing Center Co., Ltd. in Beijing, China"
 								loading="lazy" decoding="async">
 							<div class="activity-featured-caption">
-								<span>BIM AEC Solutions Leadership at CABR Stone Monument</span>
+								<span>CABR Stone Monument</span>
 							</div>
 						</div>
 
@@ -3988,7 +4044,7 @@
 								alt="BIM AEC Solutions delegation visiting CABR National Testing Center in Beijing"
 								loading="lazy" decoding="async">
 							<div class="activity-featured-caption">
-								<span>Delegation at CABR National Testing Center Building</span>
+								<span>CABR National Testing Center Building</span>
 							</div>
 						</div>
 					</div>
@@ -4034,7 +4090,7 @@
 					<div class="section-bridges">
 						<h3>Building Bridges for Engineering Excellence</h3>
 						<div class="activity-prose">
-							<p>This engagement represents an important step in BIM AEC Solutions' commitment to
+							<p>This engagement represents an important step in our commitment to
 								expanding international technical networks and strengthening engineering capabilities in
 								Cambodia.</p>
 
@@ -4043,7 +4099,7 @@
 								support the delivery of reliable, innovative, and technically advanced engineering
 								solutions for high-rise buildings and complex developments.</p>
 
-							<p>BIM AEC Solutions remains committed to connecting international engineering expertise
+							<p>We remain committed to connecting international engineering expertise
 								with Cambodia's growing construction and development industry.</p>
 						</div>
 					</div>
@@ -4061,13 +4117,13 @@
 					<!-- Filter Tabs -->
 					<div class="gallery-filter-bar">
 						<button type="button" class="filter-btn active" data-filter="all">All Photos (36)</button>
-						<button type="button" class="filter-btn" data-filter="campus">Delegation &amp; Campus
+						<button type="button" class="filter-btn" data-filter="campus">CABR Campus
 							(3)</button>
 						<button type="button" class="filter-btn" data-filter="materials">Materials Testing (9)</button>
-						<button type="button" class="filter-btn" data-filter="wind">Wind Tunnel (10)</button>
+						<button type="button" class="filter-btn" data-filter="wind">Wind Tunnel Testing (10)</button>
 						<button type="button" class="filter-btn" data-filter="seismic">Seismic Testing (6)</button>
 						<button type="button" class="filter-btn" data-filter="fire">Fire Testing (3)</button>
-						<button type="button" class="filter-btn" data-filter="facade">Glass &amp; Curtain Wall
+						<button type="button" class="filter-btn" data-filter="facade">Glass &amp; Curtain Wall Testing
 							(5)</button>
 					</div>
 
@@ -4089,7 +4145,7 @@
 								</div>
 							</a>
 							<div class="gallery-item-info">
-								<div class="gallery-item-category">Delegation &amp; Campus</div>
+								<div class="gallery-item-category">CABR Campus</div>
 								<p class="gallery-item-caption">CABR Testing Center Co., Ltd. Beijing entrance sign</p>
 							</div>
 						</div>
@@ -4103,13 +4159,13 @@
 								<div class="gallery-item-overlay">
 									<div class="gallery-click-hint"><i class="fas fa-external-link-alt"></i> View Full
 										Size</div>
-									<div style="font-weight:600; font-size:14px;">Delegation at CABR Stone Monument
+									<div style="font-weight:600; font-size:14px;">CABR Stone Monument
 									</div>
 								</div>
 							</a>
 							<div class="gallery-item-info">
-								<div class="gallery-item-category">Delegation &amp; Campus</div>
-								<p class="gallery-item-caption">BIM AEC Solutions delegation at CABR stone monument</p>
+								<div class="gallery-item-category">CABR Campus</div>
+								<p class="gallery-item-caption">CABR stone monument</p>
 							</div>
 						</div>
 
@@ -4127,7 +4183,7 @@
 								</div>
 							</a>
 							<div class="gallery-item-info">
-								<div class="gallery-item-category">Delegation &amp; Campus</div>
+								<div class="gallery-item-category">Earthquake Engineering Campus</div>
 								<p class="gallery-item-caption">China Academy of Building Research Earthquake
 									Engineering Test Center wall plaque</p>
 							</div>
@@ -4314,8 +4370,9 @@
 
 						<!-- 2-Wind Tunnel Test -->
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_095433.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_095433.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_095433.jpg"
 									alt="CABR atmospheric boundary layer wind tunnel test section" loading="lazy"
 									decoding="async">
@@ -4333,8 +4390,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_101240.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_101240.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_101240.jpg"
 									alt="High-rise building scale model on wind tunnel turntable" loading="lazy"
 									decoding="async">
@@ -4352,8 +4410,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_101259.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_101259.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_101259.jpg"
 									alt="Surface pressure taps and dynamic pressure measurement array" loading="lazy"
 									decoding="async">
@@ -4371,8 +4430,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_101722.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_101722.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_101722.jpg"
 									alt="Wind tunnel fan system and turbulence generation grids" loading="lazy"
 									decoding="async">
@@ -4390,8 +4450,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_101736.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_101736.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_101736.jpg"
 									alt="Boundary layer simulation devices inside wind tunnel" loading="lazy"
 									decoding="async">
@@ -4409,8 +4470,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_102015.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_102015.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_102015.jpg"
 									alt="Pedestrian level wind comfort probe network" loading="lazy" decoding="async">
 								<div class="gallery-item-overlay">
@@ -4427,8 +4489,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_102354.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_102354.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_102354.jpg"
 									alt="Urban surrounding topography and proximity model" loading="lazy"
 									decoding="async">
@@ -4446,8 +4509,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_102536.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_102536.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_102536.jpg"
 									alt="Dynamic structural response instrumentation" loading="lazy" decoding="async">
 								<div class="gallery-item-overlay">
@@ -4464,8 +4528,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_103008.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_103008.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_103008.jpg"
 									alt="Wind tunnel test section view with model illuminated" loading="lazy"
 									decoding="async">
@@ -4483,8 +4548,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="wind">
-							<a href="../2-Wind Tunnel Test/20260509_103529.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../2-Wind Tunnel Test/20260509_103529.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/2-Wind Tunnel Test/20260509_103529.jpg"
 									alt="Wind Tunnel Test Control Room and Facility Hall" loading="lazy"
 									decoding="async">
@@ -4503,8 +4569,9 @@
 
 						<!-- 3-Earthsquake Test (Seismic Testing) -->
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_100241.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_100241.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_100241.jpg"
 									alt="CABR Seismic simulation shaking table and multi-axis hydraulic actuators"
 									loading="lazy" decoding="async">
@@ -4522,8 +4589,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_100527.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_100527.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_100527.jpg"
 									alt="Large scale structural assembly under earthquake simulation test"
 									loading="lazy" decoding="async">
@@ -4541,8 +4609,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_100606.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_100606.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_100606.jpg"
 									alt="High power hydraulic servo actuators for earthquake simulation" loading="lazy"
 									decoding="async">
@@ -4560,8 +4629,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_104254.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_104254.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_104254.jpg"
 									alt="Heavy reaction wall and strong floor seismic test facility" loading="lazy"
 									decoding="async">
@@ -4579,8 +4649,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_104318.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_104318.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_104318.jpg"
 									alt="Pseudo-dynamic testing setup for high-rise buildings" loading="lazy"
 									decoding="async">
@@ -4598,8 +4669,9 @@
 						</div>
 
 						<div class="gallery-item" data-category="seismic">
-							<a href="../3-Earthsquake Test/20260509_105001.jpg" target="_blank" rel="noopener noreferrer"
-								class="gallery-card-link" title="Click to view full-size image in a new tab">
+							<a href="../3-Earthsquake Test/20260509_105001.jpg" target="_blank"
+								rel="noopener noreferrer" class="gallery-card-link"
+								title="Click to view full-size image in a new tab">
 								<img src="../thumbs/3-Earthsquake Test/20260509_105001.jpg"
 									alt="Earthquake simulation facility main hall overview" loading="lazy"
 									decoding="async">
@@ -4848,8 +4920,8 @@
 								<section id="text-2" class="widget widget_text">
 									<div class="textwidget">
 										<p><img decoding="async" class="alignnone size-medium wp-image-2689"
-												src="../../shared/BIM-AEC-2-300x33.png" alt="BIM AEC SOLUTIONS" width="300"
-												height="33"
+												src="../../shared/BIM-AEC-2-300x33.png" alt="BIM AEC SOLUTIONS"
+												width="300" height="33"
 												srcset="../../shared/BIM-AEC-2-300x33.png 300w, ../../shared/BIM-AEC-2-1024x111.png 1024w, ../../shared/BIM-AEC-2-768x83.png 768w, ../../shared/BIM-AEC-2-1536x167.png 1536w, ../../shared/BIM-AEC-2-2048x222.png 2048w"
 												sizes="(max-width: 300px) 100vw, 300px"></p>
 										<p>STRUCTURAL ENGINEERING + BIM TECHNOLOGY DELIVERY</p>
@@ -4930,12 +5002,25 @@
 											</li>
 											<li
 												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-ancestor menu-item-activities">
-												<a href="../index.html" class="menu-link">Activities<span role="application" class="dropdown-menu-toggle" tabindex="0"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" width="10px" height="6px" viewBox="0 0 255 153"><path d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z"></path></svg></span></span></a>
+												<a href="../index.html" class="menu-link">Activities<span
+														role="application" class="dropdown-menu-toggle"
+														tabindex="0"><span class="ast-icon icon-arrow"><svg
+																class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+																width="10px" height="6px" viewBox="0 0 255 153">
+																<path
+																	d="M7.5,7.5c-4.1,4.1-4.1,10.8,0,14.9l112.6,112.6c4.1,4.1,10.8,4.1,14.9,0L247.5,22.4c4.1-4.1,4.1-10.8,0-14.9 c-4.1-4.1-10.8-4.1-14.9,0L125,114.9L12.5,7.5C8.4,3.4,1.7,3.4,7.5,7.5z">
+																</path>
+															</svg></span></span></a>
 												<ul class="sub-menu">
-													<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-visit-cabr">
-														<a href="./index.html" aria-current="page" class="menu-link">Visit CABR</a>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-visit-cabr">
+														<a href="./index.html" aria-current="page"
+															class="menu-link">Visit CABR</a>
 													</li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi"><a href="../ECADI/index.html" class="menu-link">ECADI</a></li>
+													<li
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-ecadi">
+														<a href="../ECADI/index.html" class="menu-link">ECADI</a>
+													</li>
 												</ul>
 											</li>
 											<li
@@ -5068,6 +5153,3 @@
 </body>
 
 </html>
-
-
-
